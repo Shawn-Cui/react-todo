@@ -1,0 +1,36 @@
+.todo {
+  position: absolute;
+  top: 60px;
+  left: 33.33%;
+  width: 33.33%;
+}
+
+.checkbox,
+.checkbox:checked {
+  height: 1.25rem;
+  width: 1.25rem;
+  border: 1px solid rgba(229, 231, 235, 1);
+  border-radius: 50% !important;
+  outline: none;
+  cursor: pointer;
+  appearance: none;
+}
+
+.checkbox:checked {
+  background: linear-gradient(#57ddff, #c058f3);
+  border: none;
+}
+
+.checkbox:checked:after {
+  display: block;
+}
+
+.checkbox:after {
+  content: "";
+  display: none;
+  width: 1.25rem;
+  height: 1.25rem;
+  background-image: url(../../assets/icon-check.svg);
+  background-repeat: no-repeat;
+  background-position: 50%;
+}
